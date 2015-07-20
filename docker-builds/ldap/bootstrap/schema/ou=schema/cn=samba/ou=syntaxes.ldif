@@ -1,0 +1,10 @@
+version: 1
+dn: ou=syntaxes,cn=samba,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: fef10a63-832d-4967-8d03-3e5aec8f77a8
+ou: syntaxes
+entryUUID: b357fb14-d69a-4b56-b771-17ab213e4531
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.220Z
+entryCSN: 20150708131903.074000Z#000000#000#000000

@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.0.2.8,ou=attributeTypes,cn=apachemeta,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.4.1.18060.0.4.0.2.8
+m-name: m-typeObjectClass
+m-description: The objectclass type
+m-obsolete: FALSE
+m-equality: objectClassTypeMatch
+entryParentId: 768ccebc-bc4d-41c0-b038-a2bfbc5108a0
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.488Z
+m-syntax: 1.3.6.1.4.1.18060.0.4.0.0.1
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: 819d49fc-172f-4bb4-bc4f-0e0d28fa96af
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.965000Z#000001#000#000000

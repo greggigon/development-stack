@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.49,ou=attributeTypes,cn=apache,ou=schema
+m-usage: DSA_OPERATION
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.49
+m-name: changeLogContext
+m-description: tells about the changelog context suffix
+m-obsolete: FALSE
+entryParentId: d5c11ef5-377b-45c8-acfb-05381fb16ea2
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.752Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.12
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: d20f8a12-7fdd-4d95-a92e-3ae77270a71d
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.365000Z#000000#000#000000

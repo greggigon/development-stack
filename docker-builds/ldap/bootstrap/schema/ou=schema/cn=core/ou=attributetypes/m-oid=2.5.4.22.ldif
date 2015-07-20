@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=2.5.4.22,ou=attributeTypes,cn=core,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.5.4.22
+m-name: teletexTerminalIdentifier
+m-description: RFC2256: Teletex Terminal Identifier
+m-obsolete: FALSE
+entryParentId: 144493ac-c820-4d2e-bbd8-c15e770509a0
+m-singlevalue: FALSE
+createTimestamp: 20150708131906.340Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.51
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: d53d4657-8144-4244-a357-c38c717ff61c
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.206000Z#000001#000#000000

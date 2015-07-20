@@ -1,0 +1,7 @@
+.vagrant/
+docker-builds/gitlab/gitlab/
+docker-builds/gitlab/postgresql/
+docker-builds/gitlab/redis/
+
+docker-builds/jenkins/jenkins_home/
+.DS_Store

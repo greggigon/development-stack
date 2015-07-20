@@ -1,0 +1,143 @@
+# LDAP Apache DS for all of them
+ldap:
+  image: greggigon/apacheds
+  environment:
+    - BOOTSTRAP_FILE=/bootstrap/users.ldif
+  volumes: 
+    - /vagrant/docker-builds/ldap/bootstrap:/bootstrap
+  ports:
+    - "10389:10389"
+
+# GitLab from here
+postgresql:
+  image: sameersbn/postgresql:9.4
+  environment:
+    - DB_USER=gitlab
+    - DB_PASS=password
+    - DB_NAME=gitlabhq_production
+  volumes_from:
+    - gitlabdata
+gitlab:
+  build: ./gitlab/docker/
+  links:
+    - postgresql:postgresql
+    - redis:redisio
+    - ldap:ldap
+  ports:
+    - "10080:80"
+    - "10022:22"
+  environment:
+    - TZ=London
+    - SMTP_ENABLED=false
+    - SMTP_DOMAIN=www.example.com
+    - SMTP_HOST=smtp.gmail.com
+    - SMTP_PORT=587
+    - SMTP_USER=mailer@example.com
+    - SMTP_PASS=password
+    - SMTP_STARTTLS=true
+    - SMTP_AUTHENTICATION=login
+    - GITLAB_TIMEZONE=London
+    - GITLAB_HOST=localhost
+    - GITLAB_PORT=10080
+    - GITLAB_SSH_PORT=10022
+    - GITLAB_EMAIL=admin@example.com
+    - GITLAB_EMAIL_REPLY_TO=noreply@example.com
+    - GITLAB_BACKUPS=daily
+    - GITLAB_BACKUP_TIME=01:00
+    - LDAP_ENABLED=true
+    - LDAP_HOST=ldap
+    - LDAP_PORT=10389
+    - LDAP_UID=uid
+    - LDAP_METHOD=plain
+    - LDAP_BIND_DN=uid=admin,ou=system
+    - LDAP_PASS=secret
+    - LDAP_ACTIVE_DIRECTORY=false
+    - LDAP_BASE=ou=users,dc=dev,dc=com
+    - LDAP_USER_FILTER=(objectClass=users)
+  volumes_from:
+    - gitlabdata
+redis:
+  image: sameersbn/redis:latest
+  volumes_from:
+    - gitlabdata
+
+gitlabdata:
+  image: tianon/true
+  volumes:
+    - /home/git/data
+    - /var/lib/redis
+    - /var/lib/postgresql
+
+# Below data (volume only container) keeps folders for data only
+data:
+  image: tianon/true
+  volumes:
+    - /var/lib/postgresql/data
+    - /usr/local/taiga/media
+    - /usr/local/taiga/static
+    - /usr/local/taiga/logs
+
+
+
+# Taiga.IO stuff in here
+# TODO: Must wrap Taiga startup into something that is going to bootstrap the Project Templates
+taigadb:
+  image: postgres
+  environment:
+    POSTGRES_USER: taiga
+    POSTGRES_PASSWORD: password
+  volumes_from:
+    - data
+taigaback:
+  build: ./taiga/backend-docker-build/
+  hostname: dev.com
+  environment:
+    SECRET_KEY: examplesecretkey
+  links:
+    - taigadb:postgres
+    - ldap:ldap
+  volumes_from:
+    - data
+
+taigafront:
+  build: ./taiga/frontend-docker-build/
+  hostname: dev.com
+  links:
+    - taigaback
+  volumes_from:
+    - data
+  ports:
+    - "80:80"
+  environment:
+    DEBUG: true
+
+# # Lets Chat stuff here
+letschat:
+  image: sdelements/lets-chat
+  links:
+    - mongo:mongo
+    - ldap:ldap
+  ports:
+    - "8080:8080"
+    - "5222:5222"
+  volumes:
+    - /vagrant/docker-builds/lets-chat/config:/usr/src/app/config
+
+mongo:
+  image: mongo:latest
+
+
+# Jenkins Here
+jenkinsdata:
+  image: tianon/true
+  volumes:
+    - /var/jenkins_home
+
+
+jenkins:
+  image: jenkins:latest
+  volumes_from:
+    - jenkinsdata
+  ports:
+    - "8088:8080"
+

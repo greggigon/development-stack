@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.3.802,ou=objectClasses,cn=adsconfig,ou=schema
+m-supobjectclass: ads-base
+m-must: ads-extendedOpHandlerClass
+m-must: ads-extendedOpId
+objectclass: top
+objectclass: metaTop
+objectclass: metaObjectClass
+m-oid: 1.3.6.1.4.1.18060.0.4.1.3.802
+m-name: ads-extendedOpHandler
+m-description: Extended operation handler
+entryParentId: 9e0b1e09-e84c-41b6-ae92-10e7c86732ff
+entryUUID: e3b05c3d-f621-4641-b852-93d14477782e
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131905.947Z
+entryCSN: 20150708131902.801000Z#000001#000#000000

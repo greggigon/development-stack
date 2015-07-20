@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.34,ou=attributeTypes,cn=apache,ou=schema
+m-usage: DIRECTORY_OPERATION
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.34
+m-name: syntaxCheckers
+m-description: A multivalued syntaxCheckers description attribute
+m-obsolete: FALSE
+m-equality: caseIgnoreMatch
+entryParentId: d5c11ef5-377b-45c8-acfb-05381fb16ea2
+m-singlevalue: FALSE
+createTimestamp: 20150708131905.841Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: d755f93f-dbaa-452f-b718-05235536c722
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.402000Z#000002#000#000000

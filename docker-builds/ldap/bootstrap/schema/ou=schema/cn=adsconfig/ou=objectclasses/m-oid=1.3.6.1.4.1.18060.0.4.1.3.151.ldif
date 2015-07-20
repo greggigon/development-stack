@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.3.151,ou=objectClasses,cn=adsconfig,ou=schema
+m-supobjectclass: ads-partition
+m-may: ads-partitionCacheSize
+m-may: ads-jdbmPartitionOptimizerEnabled
+objectclass: top
+objectclass: metaTop
+objectclass: metaObjectClass
+m-oid: 1.3.6.1.4.1.18060.0.4.1.3.151
+m-name: ads-jdbmPartition
+m-description: A JDBM partition
+entryParentId: 9e0b1e09-e84c-41b6-ae92-10e7c86732ff
+entryUUID: 8a418b60-9316-45cc-860f-20d29ec48f72
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.458Z
+entryCSN: 20150708131902.814000Z#000001#000#000000

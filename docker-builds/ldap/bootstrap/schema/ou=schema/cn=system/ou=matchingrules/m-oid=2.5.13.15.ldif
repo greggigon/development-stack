@@ -1,0 +1,14 @@
+version: 1
+dn: m-oid=2.5.13.15,ou=matchingRules,cn=system,ou=schema
+objectclass: metaMatchingRule
+objectclass: metaTop
+objectclass: top
+m-oid: 2.5.13.15
+m-name: integerOrderingMatch
+m-obsolete: FALSE
+entryParentId: 93141b1d-3e39-49b7-8f28-2716ad605f13
+entryUUID: 7a78156c-1072-4d1e-a1b5-f46d581ba0ac
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.686Z
+entryCSN: 20150708131902.193000Z#000001#000#000000
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27

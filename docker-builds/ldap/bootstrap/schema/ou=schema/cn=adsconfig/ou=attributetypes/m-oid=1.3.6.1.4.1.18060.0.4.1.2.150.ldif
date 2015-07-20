@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.150,ou=attributeTypes,cn=adsconfig,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.150
+m-name: ads-partitionId
+m-description: The Partition identifier
+m-equality: caseExactMatch
+entryParentId: acb21df3-55c2-4a5d-b6c0-5ad6c577e18c
+m-substr: caseExactSubstringsMatch
+m-ordering: caseExactOrderingMatch
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.763Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.44
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: 3b783c1d-c460-437e-97f7-e13ee62225fa
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.592000Z#000001#000#000000

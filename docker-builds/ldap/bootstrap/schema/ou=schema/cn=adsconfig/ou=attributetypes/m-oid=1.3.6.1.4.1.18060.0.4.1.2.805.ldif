@@ -1,0 +1,18 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.805,ou=attributeTypes,cn=adsconfig,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.805
+m-name: ads-enabled
+m-description: specifies whether a config element is enabled or not, default is 
+ true
+m-equality: booleanMatch
+entryParentId: acb21df3-55c2-4a5d-b6c0-5ad6c577e18c
+m-singlevalue: TRUE
+createTimestamp: 20150708131905.971Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.7
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: 986520b8-153b-44cb-ae0a-beff9f470654
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.641000Z#000001#000#000000

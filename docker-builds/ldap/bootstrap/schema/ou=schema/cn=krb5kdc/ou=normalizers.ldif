@@ -1,0 +1,10 @@
+version: 1
+dn: ou=normalizers,cn=krb5kdc,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 374bf4d4-0bfc-4cc1-972e-65a55ce8c778
+ou: normalizers
+entryUUID: 5d9acefb-182d-4d2c-bbe5-5ebe96fc7dac
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.344Z
+entryCSN: 20150708131903.033000Z#000002#000#000000

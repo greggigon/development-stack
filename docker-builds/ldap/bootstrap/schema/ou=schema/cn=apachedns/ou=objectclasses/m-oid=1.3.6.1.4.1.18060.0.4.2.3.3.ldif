@@ -1,0 +1,15 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.2.3.3,ou=objectClasses,cn=apachedns,ou=schema
+m-supobjectclass: apacheDnsAbstractRecord
+m-must: apacheDnsDomainName
+objectclass: metaObjectClass
+objectclass: metaTop
+objectclass: top
+m-oid: 1.3.6.1.4.1.18060.0.4.2.3.3
+m-name: apacheDnsPointerRecord
+m-description: A pointer PTR record
+entryParentId: 88e2d02d-6afb-4763-881f-ef70c4535c56
+entryUUID: 7978e728-cb6e-4bd8-8d1b-f60eceb6ac00
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.088Z
+entryCSN: 20150708131902.897000Z#000000#000#000000

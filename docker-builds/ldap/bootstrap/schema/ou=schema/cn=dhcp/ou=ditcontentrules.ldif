@@ -1,0 +1,10 @@
+version: 1
+dn: ou=ditContentRules,cn=dhcp,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 9ef987de-06b1-4e82-8fb0-58b626117645
+ou: ditcontentrules
+entryUUID: e2f32356-42a3-49a4-8f4f-420502193e0c
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.135Z
+entryCSN: 20150708131901.296000Z#000000#000#000000

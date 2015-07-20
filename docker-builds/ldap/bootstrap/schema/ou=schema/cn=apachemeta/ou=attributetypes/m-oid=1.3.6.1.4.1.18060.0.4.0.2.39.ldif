@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.0.2.39,ou=attributeTypes,cn=apachemeta,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.4.1.18060.0.4.0.2.39
+m-name: m-length
+m-description: The maximum length for an attribute value.
+m-obsolete: FALSE
+m-equality: caseIgnoreMatch
+entryParentId: 768ccebc-bc4d-41c0-b038-a2bfbc5108a0
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.214Z
+m-syntax: 1.3.6.1.4.1.18060.0.4.0.0.4
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: add63492-0022-48de-b10a-2badfbf6cace
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.964000Z#000000#000#000000

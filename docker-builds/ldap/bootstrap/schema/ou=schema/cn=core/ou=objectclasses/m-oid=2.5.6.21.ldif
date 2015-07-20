@@ -1,0 +1,17 @@
+version: 1
+dn: m-oid=2.5.6.21,ou=objectClasses,cn=core,ou=schema
+m-supobjectclass: top
+m-may: userCertificate
+m-typeobjectclass: AUXILIARY
+m-oid: 2.5.6.21
+m-name: pkiUser
+m-description: X.509 PKI User
+m-obsolete: FALSE
+entryParentId: 761be05a-7b71-4f43-847d-f9ba23fa2cd1
+createTimestamp: 20150708131906.834Z
+objectclass: top
+objectclass: metaTop
+objectclass: metaObjectClass
+entryUUID: 7f172e5b-35a2-4702-9b34-867cd0f1c3b6
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.291000Z#000000#000#000000

@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.7165.2.1.24,ou=attributeTypes,cn=samba,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.4.1.7165.2.1.24
+m-name: sambaLMPassword
+m-description: LanManager Password
+m-obsolete: FALSE
+m-equality: caseIgnoreIA5Match
+entryParentId: 475267d2-1cf6-4281-9b1e-260b0173ca76
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.179Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.26
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: 758f1cc9-adb3-44fc-bfd5-c4f7b00ea863
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.107000Z#000001#000#000000

@@ -1,0 +1,10 @@
+version: 1
+dn: ou=normalizers,cn=rfc2307bis,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 24dae353-ddc9-47de-a902-ff968234c7ea
+ou: normalizers
+entryUUID: 729558ba-9629-4acf-83da-9baffb0d8149
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131905.953Z
+entryCSN: 20150708131903.441000Z#000001#000#000000

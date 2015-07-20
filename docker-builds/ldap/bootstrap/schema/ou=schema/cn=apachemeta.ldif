@@ -1,0 +1,11 @@
+version: 1
+dn: cn=apachemeta,ou=schema
+m-dependencies: system
+objectclass: metaSchema
+objectclass: top
+cn: apachemeta
+entryParentId: 60eef728-63ef-4abf-9116-10df6dbe6166
+entryUUID: ef4e2fd5-b2d6-402b-959a-ccd69e27e9fb
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131905.919Z
+entryCSN: 20150708131901.293000Z#000001#000#000000

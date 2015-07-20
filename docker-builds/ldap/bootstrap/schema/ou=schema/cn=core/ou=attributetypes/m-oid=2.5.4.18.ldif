@@ -1,0 +1,21 @@
+version: 1
+dn: m-oid=2.5.4.18,ou=attributeTypes,cn=core,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.5.4.18
+m-name: postOfficeBox
+m-description: RFC2256: Post Office Box
+m-obsolete: FALSE
+m-equality: caseIgnoreMatch
+entryParentId: 144493ac-c820-4d2e-bbd8-c15e770509a0
+m-substr: caseIgnoreSubstringsMatch
+m-singlevalue: FALSE
+createTimestamp: 20150708131906.226Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 3fcef10f-2876-4145-8e91-499d89a4a2a6
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.242000Z#000001#000#000000

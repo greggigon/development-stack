@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.0.2.14,ou=attributeTypes,cn=apachemeta,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.4.1.18060.0.4.0.2.14
+m-name: m-syntax
+m-description: The syntax OID for attributeTypes and matchingRules
+m-obsolete: FALSE
+m-equality: nameOrNumericIdMatch
+entryParentId: 768ccebc-bc4d-41c0-b038-a2bfbc5108a0
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.300Z
+m-syntax: 1.3.6.1.4.1.18060.0.4.0.0.2
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: b421e9cc-2f9f-4468-9e24-0d6a9d006430
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.967000Z#000001#000#000000

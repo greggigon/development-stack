@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.42.2.27.8.1.7,ou=attributeTypes,cn=pwdpolicy,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.42.2.27.8.1.7
+m-name: pwdExpireWarning
+m-equality: integerMatch
+entryParentId: 7aea8dba-f382-46dd-95ee-ccd65fc0baed
+createTimestamp: 20150708131906.472Z
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: cc03827e-db0e-432a-bd6e-6460902dbf21
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.499000Z#000000#000#000000

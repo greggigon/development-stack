@@ -1,0 +1,10 @@
+version: 1
+dn: ou=attributeTypes,cn=samba,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: fef10a63-832d-4967-8d03-3e5aec8f77a8
+ou: attributetypes
+entryUUID: 475267d2-1cf6-4281-9b1e-260b0173ca76
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.544Z
+entryCSN: 20150708131903.072000Z#000000#000#000000

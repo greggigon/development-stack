@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.906,ou=attributeTypes,cn=adsconfig,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.906
+m-name: ads-pwdMaxLength
+m-equality: integerMatch
+entryParentId: acb21df3-55c2-4a5d-b6c0-5ad6c577e18c
+createTimestamp: 20150708131906.467Z
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+objectclass: top
+objectclass: metaTop
+objectclass: metaAttributeType
+entryUUID: 9b231429-163e-4889-a97b-f700e2701742
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.703000Z#000001#000#000000

@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.42.2.27.8.1.14,ou=attributeTypes,cn=pwdpolicy,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.42.2.27.8.1.14
+m-name: pwdAllowUserChange
+m-equality: booleanMatch
+entryParentId: 7aea8dba-f382-46dd-95ee-ccd65fc0baed
+createTimestamp: 20150708131905.982Z
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.7
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: 9930a0ea-551a-4060-958b-11c6ee515522
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.498000Z#000000#000#000000

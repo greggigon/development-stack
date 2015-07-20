@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=0.9.2342.19200300.100.1.51,ou=attributeTypes,cn=cosine,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 0.9.2342.19200300.100.1.51
+m-name: subtreeMinimumQuality
+m-description: RFC1274: Subtree Mininum Quality
+m-obsolete: FALSE
+entryParentId: f5353065-d65c-44fd-a7f1-dc4c008fecb4
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.029Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.13
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 3208da52-34dd-473e-b045-58ef900ed0b7
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.657000Z#000000#000#000000

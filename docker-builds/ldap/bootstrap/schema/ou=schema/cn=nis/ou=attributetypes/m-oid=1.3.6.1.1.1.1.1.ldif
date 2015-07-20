@@ -1,0 +1,21 @@
+version: 1
+dn: m-oid=1.3.6.1.1.1.1.1,ou=attributeTypes,cn=nis,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.1.1.1.1
+m-name: gidNumber
+m-description: An integer uniquely identifying a group in an administrative doma
+ in
+m-obsolete: FALSE
+m-equality: integerMatch
+entryParentId: db1ade14-bc41-4002-8137-416294525d27
+m-singlevalue: TRUE
+createTimestamp: 20150708131905.745Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 0214e631-9866-46bf-8f17-6fe08b6f0291
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.943000Z#000000#000#000000

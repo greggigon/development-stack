@@ -1,0 +1,10 @@
+version: 1
+dn: ou=comparators,cn=adsconfig,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: c98b1165-fc0c-4c5b-a34d-d9aa34f0aabc
+ou: comparators
+entryUUID: 1ff352db-77f0-4178-a517-3ef024103512
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.687Z
+entryCSN: 20150708131902.574000Z#000001#000#000000

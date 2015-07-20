@@ -1,0 +1,18 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.2.3.9,ou=objectClasses,cn=apachedns,ou=schema
+m-supobjectclass: apacheDnsAbstractRecord
+m-must: apacheDnsServicePriority
+m-must: apacheDnsServiceWeight
+m-must: apacheDnsServicePort
+m-must: apacheDnsDomainName
+objectclass: metaObjectClass
+objectclass: metaTop
+objectclass: top
+m-oid: 1.3.6.1.4.1.18060.0.4.2.3.9
+m-name: apacheDnsServiceRecord
+m-description: A service SRV record
+entryParentId: 88e2d02d-6afb-4763-881f-ef70c4535c56
+entryUUID: f49c3806-5a81-49ef-bd0a-49b9524f9917
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131905.716Z
+entryCSN: 20150708131902.898000Z#000000#000#000000

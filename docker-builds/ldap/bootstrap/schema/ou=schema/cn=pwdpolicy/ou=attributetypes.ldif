@@ -1,0 +1,10 @@
+version: 1
+dn: ou=attributeTypes,cn=pwdpolicy,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 1ca8f4d8-9a4e-4aac-ac90-571b531a0bad
+ou: attributetypes
+entryUUID: 7aea8dba-f382-46dd-95ee-ccd65fc0baed
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.248Z
+entryCSN: 20150708131901.466000Z#000000#000#000000

@@ -1,0 +1,21 @@
+version: 1
+dn: m-oid=2.16.840.1.113730.3.1.1,ou=attributeTypes,cn=inetorgperson,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.16.840.1.113730.3.1.1
+m-name: carLicense
+m-description: RFC2798: vehicle license or registration plate
+m-obsolete: FALSE
+m-equality: caseIgnoreMatch
+entryParentId: 3ff5c57f-9023-41d3-8a6b-cd31b2edd723
+m-substr: caseIgnoreSubstringsMatch
+m-singlevalue: FALSE
+createTimestamp: 20150708131906.121Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.15
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 1270eaba-05b4-4cac-8ea5-4ce5ab48f8d6
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.852000Z#000000#000#000000

@@ -1,0 +1,17 @@
+version: 1
+dn: m-oid=2.5.6.18,ou=objectClasses,cn=core,ou=schema
+m-supobjectclass: top
+m-may: supportedAlgorithms
+m-typeobjectclass: AUXILIARY
+m-oid: 2.5.6.18
+m-name: userSecurityInformation
+m-description: X.521 user security information
+m-obsolete: FALSE
+entryParentId: 761be05a-7b71-4f43-847d-f9ba23fa2cd1
+createTimestamp: 20150708131905.790Z
+objectclass: top
+objectclass: metaTop
+objectclass: metaObjectClass
+entryUUID: 17f3ea8e-845b-40aa-8dd6-b2c0faf6d433
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131903.328000Z#000000#000#000000

@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.2.2.3,ou=attributeTypes,cn=apachedns,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.4.1.18060.0.4.2.2.3
+m-name: apacheDnsDomainName
+m-description: A domain name represented as a sequence of labels
+m-obsolete: FALSE
+m-equality: caseIgnoreIA5Match
+entryParentId: bc4ca0cc-66e5-4c8e-8f16-b0d5f77e0ac9
+m-singlevalue: TRUE
+createTimestamp: 20150708131905.954Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.26
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 4e7daf90-e633-485b-a3c4-b0d06f6d201f
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.865000Z#000000#000#000000

@@ -1,0 +1,21 @@
+version: 1
+dn: m-oid=2.16.840.1.113719.1.203.4.6,ou=attributeTypes,cn=dhcp,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.16.840.1.113719.1.203.4.6
+m-name: dhcpNetMask
+m-description: The subnet mask length for the subnet.  The mask can be easily co
+ mputed from this length.
+m-obsolete: FALSE
+m-equality: integerMatch
+entryParentId: 1a68b2df-0d6b-441b-a1c8-2c75bd68c0b1
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.630Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 84631ac1-279e-473e-909b-887c03a10ab7
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.335000Z#000000#000#000000

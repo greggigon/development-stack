@@ -1,0 +1,10 @@
+version: 1
+dn: ou=syntaxes,cn=java,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: c4fd0c98-8d8b-4ffa-87c2-8daa37391d14
+ou: syntaxes
+entryUUID: d5bb7252-96a5-4f1f-9365-4af813d6c0ea
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.210Z
+entryCSN: 20150708131901.805000Z#000000#000#000000

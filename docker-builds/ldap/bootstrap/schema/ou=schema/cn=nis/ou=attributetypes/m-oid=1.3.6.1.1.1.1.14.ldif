@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=1.3.6.1.1.1.1.14,ou=attributeTypes,cn=nis,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 1.3.6.1.1.1.1.14
+m-name: nisNetgroupTriple
+m-description: Netgroup triple
+m-obsolete: FALSE
+entryParentId: db1ade14-bc41-4002-8137-416294525d27
+m-singlevalue: FALSE
+createTimestamp: 20150708131906.640Z
+m-syntax: 1.3.6.1.1.1.0.0
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: ad794848-0b0f-49dd-b06f-3ed7a991c492
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.933000Z#000000#000#000000

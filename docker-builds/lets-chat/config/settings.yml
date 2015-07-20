@@ -1,0 +1,22 @@
+env: development
+
+auth:
+  providers: [ldap]
+
+  ldap:
+    connect_settings:
+      url: ldap://ldap:10389
+    bind_options:
+      bindDN: "uid=admin,ou=system"
+      bindCredentials: secret
+    search:
+      base: "ou=users,dc=dev,dc=com"
+      opts:
+        scope: one
+        filter: (uid={{username}})
+    field_mappings:
+      uid: uid
+      firstName: cn
+      lastName: sn
+      displayName: cn
+      email: email

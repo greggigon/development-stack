@@ -1,0 +1,19 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.18060.0.4.1.2.814,ou=attributeTypes,cn=adsconfig,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.18060.0.4.1.2.814
+m-name: ads-httpAppCtxPath
+m-description: A web app context path
+m-equality: caseIgnoreMatch
+entryParentId: acb21df3-55c2-4a5d-b6c0-5ad6c577e18c
+m-substr: caseIgnoreSubstringsMatch
+m-ordering: caseIgnoreOrderingMatch
+m-singlevalue: TRUE
+createTimestamp: 20150708131905.807Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.44
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: ff312540-01f1-4f0a-af56-fb1fed1bbcc4
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.727000Z#000000#000#000000

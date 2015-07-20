@@ -1,0 +1,16 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.42.2.27.8.1.10,ou=attributeTypes,cn=pwdpolicy,ou=schema
+m-length: 0
+m-oid: 1.3.6.1.4.1.42.2.27.8.1.10
+m-name: pwdLockoutDuration
+m-equality: integerMatch
+entryParentId: 7aea8dba-f382-46dd-95ee-ccd65fc0baed
+createTimestamp: 20150708131906.616Z
+m-singlevalue: TRUE
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.27
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: 816c4784-43cf-419e-8a2e-9299451ca764
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.489000Z#000001#000#000000

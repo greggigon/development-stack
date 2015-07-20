@@ -1,0 +1,10 @@
+version: 1
+dn: ou=ditStructureRules,cn=samba,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: fef10a63-832d-4967-8d03-3e5aec8f77a8
+ou: ditstructurerules
+entryUUID: 02ddf051-4fd8-4930-8fa9-0bfb10573c8c
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.222Z
+entryCSN: 20150708131903.073000Z#000003#000#000000

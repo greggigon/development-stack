@@ -1,0 +1,10 @@
+version: 1
+dn: ou=objectClasses,cn=apachedns,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 8e3ad4ad-0c14-466b-8f65-07b570fdf1e3
+ou: objectclasses
+entryUUID: 88e2d02d-6afb-4763-881f-ef70c4535c56
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.170Z
+entryCSN: 20150708131902.847000Z#000001#000#000000

@@ -1,0 +1,23 @@
+version: 1
+dn: m-oid=2.16.840.1.113719.1.203.4.30,ou=attributeTypes,cn=dhcp,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.16.840.1.113719.1.203.4.30
+m-name: dhcpAssignedHostName
+m-description: This is the actual hostname that was assigned to a client. It may
+  not be the name that was requested by the client.  The fully qualified domain 
+ name can be determined by appending the value of "dhcpDomainName" (with a dot s
+ eparator) to this name.
+m-obsolete: FALSE
+m-equality: caseIgnoreIA5Match
+entryParentId: 1a68b2df-0d6b-441b-a1c8-2c75bd68c0b1
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.133Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.26
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 0da70d0d-59d5-4ddb-bf25-d8fa98c7aca3
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.363000Z#000000#000#000000

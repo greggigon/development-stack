@@ -1,0 +1,10 @@
+version: 1
+dn: ou=ditContentRules,cn=pwdpolicy,ou=schema
+objectclass: organizationalUnit
+objectclass: top
+entryParentId: 1ca8f4d8-9a4e-4aac-ac90-571b531a0bad
+ou: ditcontentrules
+entryUUID: 6f7efd01-6261-4103-9f85-74d8abb3b39d
+creatorsname: uid=admin,ou=system
+createTimestamp: 20150708131906.463Z
+entryCSN: 20150708131901.465000Z#000000#000#000000

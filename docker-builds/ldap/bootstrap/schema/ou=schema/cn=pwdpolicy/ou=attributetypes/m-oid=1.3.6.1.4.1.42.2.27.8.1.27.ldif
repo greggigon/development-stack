@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=1.3.6.1.4.1.42.2.27.8.1.27,ou=attributeTypes,cn=pwdpolicy,ou=schema
+m-usage: directoryOperation
+m-length: 0
+m-oid: 1.3.6.1.4.1.42.2.27.8.1.27
+m-name: pwdStartTime
+m-description: The time the password becomes enabled
+m-equality: generalizedTimeMatch
+entryParentId: 7aea8dba-f382-46dd-95ee-ccd65fc0baed
+m-ordering: generalizedTimeOrderingMatch
+m-singlevalue: TRUE
+createTimestamp: 20150708131906.687Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.24
+m-nousermodification: TRUE
+objectclass: metaTop
+objectclass: metaAttributeType
+objectclass: top
+entryUUID: 9ea351fb-4a30-4c80-9af8-b604ec7eefc6
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131901.502000Z#000000#000#000000

@@ -1,0 +1,20 @@
+version: 1
+dn: m-oid=2.5.4.35,ou=attributeTypes,cn=system,ou=schema
+m-usage: USER_APPLICATIONS
+m-oid: 2.5.4.35
+m-name: userPassword
+m-description: RFC2256/2307: password of user
+m-obsolete: FALSE
+m-equality: octetStringMatch
+entryParentId: bfd3c7af-44e8-4633-9461-faa1305ad4ad
+m-singlevalue: FALSE
+createTimestamp: 20150708131906.351Z
+m-syntax: 1.3.6.1.4.1.1466.115.121.1.40
+m-nousermodification: FALSE
+m-collective: FALSE
+objectclass: metaAttributeType
+objectclass: metaTop
+objectclass: top
+entryUUID: 7a791823-a131-4c1e-b0ac-aead1a92cb43
+creatorsname: uid=admin,ou=system
+entryCSN: 20150708131902.145000Z#000000#000#000000
