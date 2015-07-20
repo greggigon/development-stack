@@ -140,6 +140,7 @@ jenkins:
     - jenkinsdata
   ports:
     - "8088:8080"
+    - "50000:50000"
 
 # Docker registry 
 registrydata:
