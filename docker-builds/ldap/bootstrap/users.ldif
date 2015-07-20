@@ -14,13 +14,3 @@ email: greg.gigon@themail.com
 uid: greg.gigon
 userPassword: password1
 
-dn: uid=richard.crook,ou=users,dc=dev,dc=com
-changetype: add
-objectclass: top
-objectclass: users
-cn: Richard
-sn: Crook
-email: richard.crook@themail.com
-uid: richard.crook
-userPassword: password1
-

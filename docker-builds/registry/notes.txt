@@ -1,0 +1,5 @@
+Using official Docker registry and konracklaine UI.
+
+docker run -d --name registry -v /vagrant/docker-builds/registry/registry:/data -e STORAGE_PATH=/data -e SEARCH_BACKEND=sqlalchemy -e SETTINGS_FLAVOUR=local -p 5000:5000 registry 
+
+docker run -d -e ENV_DOCKER_REGISTRY_HOST=registry -e ENV_DOCKER_REGISTRY_PORT=5000 -p 5005:80 --link docker_registry:registry konradkleine/docker-registry-frontend
