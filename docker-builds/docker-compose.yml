@@ -127,46 +127,46 @@ mongo:
   image: mongo:latest
 
 
-# # Jenkins Here
-# jenkinsdata:
-#   image: tianon/true
-#   volumes:
-#     - /var/jenkins_home
+# Jenkins Here
+jenkinsdata:
+  image: tianon/true
+  volumes:
+    - /var/jenkins_home
 
 
-# jenkins:
-#   image: jenkins:latest
-#   volumes_from:
-#     - jenkinsdata
-#   ports:
-#     - "8088:8080"
-#     - "50000:50000"
+jenkins:
+  image: jenkins:latest
+  volumes_from:
+    - jenkinsdata
+  ports:
+    - "8088:8080"
+    - "50000:50000"
 
-# # Docker registry 
-# registrydata:
-#   image: tianon/true
-#   volumes:
-#     - /data
+# Docker registry 
+registrydata:
+  image: tianon/true
+  volumes:
+    - /data
 
-# registry:
-#   image: registry:latest
-#   volumes_from:
-#     - registrydata
-#   environment:
-#     - STORAGE_PATH=/data
-#     - SEARCH_BACKEND=sqlalchemy
-#     - SETTINGS_FLAVOUR=local
-#   ports:
-#     - "5000:5000"
+registry:
+  image: registry:latest
+  volumes_from:
+    - registrydata
+  environment:
+    - STORAGE_PATH=/data
+    - SEARCH_BACKEND=sqlalchemy
+    - SETTINGS_FLAVOUR=local
+  ports:
+    - "5000:5000"
 
-# registryui:
-#   image: konradkleine/docker-registry-frontend
-#   links:
-#     - registry:registry
-#   environment: 
-#     - ENV_DOCKER_REGISTRY_HOST=registry
-#     - ENV_DOCKER_REGISTRY_PORT=5000
-#   ports:
-#     - "5005:80"
+registryui:
+  image: konradkleine/docker-registry-frontend
+  links:
+    - registry:registry
+  environment: 
+    - ENV_DOCKER_REGISTRY_HOST=registry
+    - ENV_DOCKER_REGISTRY_PORT=5000
+  ports:
+    - "5005:80"
 
 

@@ -12,8 +12,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |vb|
      vb.gui = true
+
      vb.memory = "2048"
      vb.cpus = 2
+     
      vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
      vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
      vb.customize ["modifyvm", :id, "--vram", "128"]
@@ -22,13 +24,16 @@ Vagrant.configure(2) do |config|
 
    config.vm.provision "shell", privileged: true, inline: <<-SHELL
       add-apt-repository -y ppa:openjdk-r/ppa && apt-get update
+      wget -qO- https://get.docker.com/ | sh
+      sudo usermod -aG docker vagrant
    SHELL
    
    config.vm.provision "shell", privileged: false, inline: <<-SHELL
     sudo apt-get -y install git wget openjdk-8-jdk nodejs
     curl -s https://install.meteor.com/ | sh
    SHELL
-   
+
+
    ## !!!!!!!!! UNCOMMENT THIS STUFF TO GET UBUNTU DESKTOP FOR DEV !!!!!!!!!!!!
    # config.vm.provision "shell", privileged: false, inline: <<-SHELL
     #  mkdir -p ~/tools 
