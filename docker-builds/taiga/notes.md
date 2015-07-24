@@ -1,0 +1,4 @@
+cd /usr/local/taiga/taiga-back/
+python manage.py loaddata initial_user
+python manage.py loaddata initial_project_templates
+python manage.py loaddata initial_role
