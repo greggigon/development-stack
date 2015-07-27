@@ -1,0 +1,43 @@
+# Below data (volume only container) keeps folders for data only
+data:
+  image: tianon/true
+  volumes:
+    - /var/lib/postgresql/data
+    - /usr/local/taiga/media
+    - /usr/local/taiga/static
+    - /usr/local/taiga/logs
+
+
+
+# Taiga.IO stuff in here
+# TODO: Must wrap Taiga startup into something that is going to bootstrap the Project Templates
+taigadb:
+  image: postgres
+  environment:
+    POSTGRES_USER: taiga
+    POSTGRES_PASSWORD: password
+  volumes_from:
+    - data
+taigaback:
+  build: ./taiga/backend-docker-build/
+  hostname: dev.com
+  environment:
+    SECRET_KEY: examplesecretkey
+  links:
+    - taigadb:postgres
+  external_links:
+    - ldap:ldap
+  volumes_from:
+    - data
+
+taigafront:
+  build: ./taiga/frontend-docker-build/
+  hostname: dev.com
+  links:
+    - taigaback
+  volumes_from:
+    - data
+  ports:
+    - "80:80"
+  environment:
+    DEBUG: true
